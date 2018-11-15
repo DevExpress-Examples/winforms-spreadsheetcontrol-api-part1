@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CellActions.cs](./CS/SpreadsheetControl/SpreadsheetActions/CellActions.cs) (VB: [CellActions.vb](./VB/SpreadsheetControl/SpreadsheetActions/CellActions.vb))
+* [FormattingActions.cs](./CS/SpreadsheetControl/SpreadsheetActions/FormattingActions.cs) (VB: [FormattingActions.vb](./VB/SpreadsheetControl/SpreadsheetActions/FormattingActions.vb))
+* [FormulaActions.cs](./CS/SpreadsheetControl/SpreadsheetActions/FormulaActions.cs) (VB: [FormulaActions.vb](./VB/SpreadsheetControl/SpreadsheetActions/FormulaActions.vb))
+* [ImportExportActions.cs](./CS/SpreadsheetControl/SpreadsheetActions/ImportExportActions.cs) (VB: [ImportExportActions.vb](./VB/SpreadsheetControl/SpreadsheetActions/ImportExportActions.vb))
+* [PrintingActions.cs](./CS/SpreadsheetControl/SpreadsheetActions/PrintingActions.cs) (VB: [PrintingActions.vb](./VB/SpreadsheetControl/SpreadsheetActions/PrintingActions.vb))
+* [RowAndColumnActions.cs](./CS/SpreadsheetControl/SpreadsheetActions/RowAndColumnActions.cs) (VB: [RowAndColumnActions.vb](./VB/SpreadsheetControl/SpreadsheetActions/RowAndColumnActions.vb))
+* [WorksheetActions.cs](./CS/SpreadsheetControl/SpreadsheetActions/WorksheetActions.cs) (VB: [WorksheetActions.vb](./VB/SpreadsheetControl/SpreadsheetActions/WorksheetActions.vb))
+<!-- default file list end -->
 # WinForms SpreadsheetControl API 
 
 

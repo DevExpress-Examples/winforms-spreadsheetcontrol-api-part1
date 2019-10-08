@@ -82,8 +82,8 @@ Namespace SpreadsheetControl_API
 			Try
 				Dim worksheet As Worksheet = workbook.Worksheets(0)
 
-				Dim dataRangeHeader As Range = worksheet.Range("A1:C1")
-				worksheet.MergeCells(dataRangeHeader)
+                Dim dataRangeHeader As CellRange = worksheet.Range("A1:C1")
+                worksheet.MergeCells(dataRangeHeader)
 				dataRangeHeader.Value = "myRange:"
 				dataRangeHeader.Alignment.Horizontal = SpreadsheetHorizontalAlignment.Center
 				dataRangeHeader.FillColor = Color.LightGray
@@ -92,8 +92,8 @@ Namespace SpreadsheetControl_API
 				worksheet.Range("A2:C5").Alignment.Horizontal = SpreadsheetHorizontalAlignment.Center
 				worksheet.Range("A2:C5").Borders.SetOutsideBorders(Color.LightBlue, BorderLineStyle.Medium)
 
-				Dim sumHeader As Range = worksheet.Range("E1:F1")
-				worksheet.MergeCells(sumHeader)
+                Dim sumHeader As CellRange = worksheet.Range("E1:F1")
+                worksheet.MergeCells(sumHeader)
 				sumHeader.Value = "Sum:"
 				sumHeader.Alignment.Horizontal = SpreadsheetHorizontalAlignment.Center
 				sumHeader.FillColor = Color.LightGray
@@ -103,12 +103,12 @@ Namespace SpreadsheetControl_API
 				worksheet.Cells("E3").Value = "Value:"
 				worksheet.Cells("F2").Value = "'= SUM(myRange)"
 
-'				#Region "#NamesInFormulas"
-				' Access the "A2:C5" range of cells in the worksheet.
-				Dim range As Range = worksheet.Range("A2:C5")
+                '				#Region "#NamesInFormulas"
+                ' Access the "A2:C5" range of cells in the worksheet.
+                Dim range As CellRange = worksheet.Range("A2:C5")
 
-				' Specify the name for the created range.
-				range.Name = "myRange"
+                ' Specify the name for the created range.
+                range.Name = "myRange"
 
 				' Create a formula that sums up the values of all cells included in the specified named range.
 				worksheet.Cells("F3").Formula = "= SUM(myRange)"

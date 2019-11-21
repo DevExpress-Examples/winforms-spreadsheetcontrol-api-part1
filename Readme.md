@@ -24,5 +24,10 @@
 <p>- Print the workbook</p>
 
 <br/>
+See also:
+<br/>
+<a href="https://github.com/DevExpress-Examples/winforms-spreadsheetcontrol-api-part-2-e4832">WinForms SpreadsheetControl API - Part 2</a>
+<br/>
+<a href="https://github.com/DevExpress-Examples/winforms-spreadsheetcontrol-api-part-3-t231273">WinForms SpreadsheetControl API - Part 3</a>
 
 

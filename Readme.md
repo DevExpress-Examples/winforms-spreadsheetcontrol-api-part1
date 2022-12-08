@@ -15,7 +15,6 @@ This example demonstrates how to use the Spreadsheet API to execute the followin
 * Import data from different data sources
 * Export a workbook to PDF
 * Print a workbook
-* Specify the built-in and custom document properties
 
 The application form contains the list of supported operations. A user can select an operation and click the **Run** button to view the resulting spreadsheet document in the Spreadsheet control.
 

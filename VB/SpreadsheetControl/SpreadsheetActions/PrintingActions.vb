@@ -3,6 +3,7 @@ Imports System.Drawing
 #Region "#printingUsings"
 Imports DevExpress.Spreadsheet
 Imports DevExpress.XtraPrinting
+Imports DevExpress.Drawing.Printing
 #End Region ' #printingUsings
 
 Namespace SpreadsheetControl_API
@@ -45,7 +46,7 @@ Namespace SpreadsheetControl_API
 			worksheet.ActiveView.Orientation = PageOrientation.Landscape
 			'  Display row and column headings.
 			worksheet.ActiveView.ShowHeadings = True
-			worksheet.ActiveView.PaperKind = System.Drawing.Printing.PaperKind.A4
+			worksheet.ActiveView.PaperKind = DXPaperKind.A4
 			' Access an object that contains print options.
 			Dim printOptions As WorksheetPrintOptions = worksheet.PrintOptions
 			'  Do not print gridlines.

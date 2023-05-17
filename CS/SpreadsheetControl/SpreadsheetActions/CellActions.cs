@@ -417,23 +417,15 @@ namespace SpreadsheetControl_API {
 
                 // Add a comment to the "A2" cell.
                 Cell commentedCell = worksheet.Cells["A2"];
-                Comment commentA2 = worksheet.Comments.Add(commentedCell, author, "This is a comment");
-                commentA2.Visible = true;
-
-                // Insert the author's name at the beginning of the comment.
-                CommentRunCollection commentRunsA2 = commentA2.Runs;
-                commentRunsA2.Insert(0, author + ": \r\n");
+                ThreadedComment commentA2 = worksheet.ThreadedComments.Add(commentedCell, author, author + ": \r\n" + "This is a comment");
 
                 // Copy the comment to the "E2" cell.
                 worksheet.Cells["E2"].CopyFrom(commentedCell, PasteSpecial.Comments);
 
                 // Get the added comment and make it visible.
-                Comment commentE2 = worksheet.Comments.GetComments(worksheet["E2"])[0];
-                commentE2.Visible = true;
+                ThreadedComment commentE2 = worksheet.ThreadedComments.GetThreadedComments(worksheet["E2"])[0];
 
-                // Modify text of the copied comment.
-                CommentRunCollection commentRunsE2 = commentE2.Runs;
-                commentRunsE2[1].Text = "This comment is copied from the cell " + commentedCell.GetReferenceA1();
+                commentE2.Text = "This comment is copied from the cell " + commentedCell.GetReferenceA1();
                 #endregion #AddComment
             }
             finally

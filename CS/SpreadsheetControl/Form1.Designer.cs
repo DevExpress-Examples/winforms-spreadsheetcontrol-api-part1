@@ -32,27 +32,33 @@
             this.spreadsheetControl1 = new DevExpress.XtraSpreadsheet.SpreadsheetControl();
             this.treeList1 = new DevExpress.XtraTreeList.TreeList();
             this.treeListColumn1 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
-            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.button1 = new System.Windows.Forms.Button();
-            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.spreadsheetFormulaBarControl1 = new DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl();
             this.spreadsheetNameBoxControl1 = new DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl();
-            this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.splitterControl1 = new DevExpress.XtraEditors.SplitterControl();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.spreadsheetFormulaBarControl1 = new DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
             ((System.ComponentModel.ISupportInitialize)(this.treeList1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
-            this.splitContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
-            this.splitContainerControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetNameBoxControl1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
-            this.splitContainerControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // spreadsheetControl1
             // 
-            this.spreadsheetControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spreadsheetControl1.Location = new System.Drawing.Point(0, 29);
+            this.spreadsheetControl1.Location = new System.Drawing.Point(345, 40);
             this.spreadsheetControl1.Name = "spreadsheetControl1";
             this.spreadsheetControl1.Options.Culture = new System.Globalization.CultureInfo("en-US");
             this.spreadsheetControl1.Options.Export.Csv.Culture = new System.Globalization.CultureInfo("");
@@ -62,7 +68,7 @@
             this.spreadsheetControl1.Options.Import.Csv.Encoding = ((System.Text.Encoding)(resources.GetObject("spreadsheetControl1.Options.Import.Csv.Encoding")));
             this.spreadsheetControl1.Options.Import.Txt.Culture = new System.Globalization.CultureInfo("");
             this.spreadsheetControl1.Options.Import.Txt.Encoding = ((System.Text.Encoding)(resources.GetObject("spreadsheetControl1.Options.Import.Txt.Encoding")));
-            this.spreadsheetControl1.Size = new System.Drawing.Size(1053, 857);
+            this.spreadsheetControl1.Size = new System.Drawing.Size(1008, 834);
             this.spreadsheetControl1.TabIndex = 0;
             this.spreadsheetControl1.Text = "spreadsheetControl1";
             // 
@@ -74,14 +80,12 @@
             this.treeList1.Appearance.FocusedCell.Options.UseForeColor = true;
             this.treeList1.Columns.AddRange(new DevExpress.XtraTreeList.Columns.TreeListColumn[] {
             this.treeListColumn1});
-            this.treeList1.DataSource = null;
-            this.treeList1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeList1.Location = new System.Drawing.Point(0, 0);
+            this.treeList1.Location = new System.Drawing.Point(12, 12);
             this.treeList1.Name = "treeList1";
             this.treeList1.OptionsBehavior.Editable = false;
             this.treeList1.OptionsView.ShowColumns = false;
             this.treeList1.OptionsView.ShowIndicator = false;
-            this.treeList1.Size = new System.Drawing.Size(307, 819);
+            this.treeList1.Size = new System.Drawing.Size(319, 782);
             this.treeList1.TabIndex = 1;
             this.treeList1.DoubleClick += new System.EventHandler(this.treeList1_DoubleClick);
             // 
@@ -94,111 +98,149 @@
             this.treeListColumn1.VisibleIndex = 0;
             this.treeListColumn1.Width = 92;
             // 
-            // splitContainerControl1
-            // 
-            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Horizontal = false;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerControl1.Name = "splitContainerControl1";
-            this.splitContainerControl1.Panel1.Controls.Add(this.treeList1);
-            this.splitContainerControl1.Panel1.Text = "Panel1";
-            this.splitContainerControl1.Panel2.Controls.Add(this.button1);
-            this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(307, 886);
-            this.splitContainerControl1.SplitterPosition = 819;
-            this.splitContainerControl1.TabIndex = 2;
-            this.splitContainerControl1.Text = "splitContainerControl1";
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(307, 62);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Run";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // splitContainerControl2
-            // 
-            this.splitContainerControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerControl2.Name = "splitContainerControl2";
-            this.splitContainerControl2.Panel1.Controls.Add(this.splitContainerControl1);
-            this.splitContainerControl2.Panel1.Text = "Panel1";
-            this.splitContainerControl2.Panel2.Controls.Add(this.spreadsheetControl1);
-            this.splitContainerControl2.Panel2.Controls.Add(this.splitterControl1);
-            this.splitContainerControl2.Panel2.Controls.Add(this.splitContainerControl3);
-            this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(1365, 886);
-            this.splitContainerControl2.SplitterPosition = 307;
-            this.splitContainerControl2.TabIndex = 3;
-            this.splitContainerControl2.Text = "splitContainerControl2";
-            // 
-            // spreadsheetFormulaBarControl1
-            // 
-            this.spreadsheetFormulaBarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spreadsheetFormulaBarControl1.Location = new System.Drawing.Point(0, 0);
-            this.spreadsheetFormulaBarControl1.MinimumSize = new System.Drawing.Size(0, 24);
-            this.spreadsheetFormulaBarControl1.Name = "spreadsheetFormulaBarControl1";
-            this.spreadsheetFormulaBarControl1.Size = new System.Drawing.Size(903, 24);
-            this.spreadsheetFormulaBarControl1.SpreadsheetControl = this.spreadsheetControl1;
-            this.spreadsheetFormulaBarControl1.TabIndex = 0;
-            // 
             // spreadsheetNameBoxControl1
             // 
-            this.spreadsheetNameBoxControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.spreadsheetNameBoxControl1.EditValue = "A1";
-            this.spreadsheetNameBoxControl1.Location = new System.Drawing.Point(0, 0);
+            this.spreadsheetNameBoxControl1.Location = new System.Drawing.Point(345, 12);
             this.spreadsheetNameBoxControl1.MinimumSize = new System.Drawing.Size(0, 20);
             this.spreadsheetNameBoxControl1.Name = "spreadsheetNameBoxControl1";
             this.spreadsheetNameBoxControl1.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 11F);
             this.spreadsheetNameBoxControl1.Properties.Appearance.Options.UseFont = true;
+            this.spreadsheetNameBoxControl1.Properties.AutoHeight = false;
             this.spreadsheetNameBoxControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spreadsheetNameBoxControl1.Size = new System.Drawing.Size(145, 24);
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Down)});
+            this.spreadsheetNameBoxControl1.Size = new System.Drawing.Size(473, 24);
             this.spreadsheetNameBoxControl1.SpreadsheetControl = this.spreadsheetControl1;
+            this.spreadsheetNameBoxControl1.StyleController = this.layoutControl1;
             this.spreadsheetNameBoxControl1.TabIndex = 0;
             // 
-            // splitContainerControl3
+            // layoutControl1
             // 
-            this.splitContainerControl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitContainerControl3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerControl3.MinimumSize = new System.Drawing.Size(0, 24);
-            this.splitContainerControl3.Name = "splitContainerControl3";
-            this.splitContainerControl3.Panel1.Controls.Add(this.spreadsheetNameBoxControl1);
-            this.splitContainerControl3.Panel2.Controls.Add(this.spreadsheetFormulaBarControl1);
-            this.splitContainerControl3.Size = new System.Drawing.Size(1053, 24);
-            this.splitContainerControl3.SplitterPosition = 145;
-            this.splitContainerControl3.TabIndex = 2;
+            this.layoutControl1.Controls.Add(this.spreadsheetControl1);
+            this.layoutControl1.Controls.Add(this.spreadsheetFormulaBarControl1);
+            this.layoutControl1.Controls.Add(this.spreadsheetNameBoxControl1);
+            this.layoutControl1.Controls.Add(this.simpleButton1);
+            this.layoutControl1.Controls.Add(this.treeList1);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(723, 83, 650, 400);
+            this.layoutControl1.Root = this.Root;
+            this.layoutControl1.Size = new System.Drawing.Size(1365, 886);
+            this.layoutControl1.TabIndex = 4;
+            this.layoutControl1.Text = "layoutControl1";
             // 
-            // splitterControl1
+            // spreadsheetFormulaBarControl1
             // 
-            this.splitterControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitterControl1.Location = new System.Drawing.Point(0, 24);
-            this.splitterControl1.MinSize = 20;
-            this.splitterControl1.Name = "splitterControl1";
-            this.splitterControl1.Size = new System.Drawing.Size(1053, 5);
-            this.splitterControl1.TabIndex = 1;
-            this.splitterControl1.TabStop = false;
+            this.spreadsheetFormulaBarControl1.Location = new System.Drawing.Point(822, 12);
+            this.spreadsheetFormulaBarControl1.MinimumSize = new System.Drawing.Size(0, 24);
+            this.spreadsheetFormulaBarControl1.Name = "spreadsheetFormulaBarControl1";
+            this.spreadsheetFormulaBarControl1.Size = new System.Drawing.Size(531, 24);
+            this.spreadsheetFormulaBarControl1.SpreadsheetControl = this.spreadsheetControl1;
+            this.spreadsheetFormulaBarControl1.TabIndex = 0;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(12, 798);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(319, 76);
+            this.simpleButton1.StyleController = this.layoutControl1;
+            this.simpleButton1.TabIndex = 4;
+            this.simpleButton1.Text = "Run";
+            this.simpleButton1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem2,
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.layoutControlItem5,
+            this.splitterItem1});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(1365, 886);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.treeList1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(323, 786);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.simpleButton1;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 786);
+            this.layoutControlItem2.MaxSize = new System.Drawing.Size(0, 80);
+            this.layoutControlItem2.MinSize = new System.Drawing.Size(135, 80);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(323, 80);
+            this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.spreadsheetNameBoxControl1;
+            this.layoutControlItem3.Location = new System.Drawing.Point(333, 0);
+            this.layoutControlItem3.MaxSize = new System.Drawing.Size(0, 28);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(54, 28);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(477, 28);
+            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.spreadsheetFormulaBarControl1;
+            this.layoutControlItem4.Location = new System.Drawing.Point(810, 0);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(535, 28);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextVisible = false;
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.spreadsheetControl1;
+            this.layoutControlItem5.Location = new System.Drawing.Point(333, 28);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(1012, 838);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextVisible = false;
+            // 
+            // splitterItem1
+            // 
+            this.splitterItem1.AllowHotTrack = true;
+            this.splitterItem1.Location = new System.Drawing.Point(323, 0);
+            this.splitterItem1.Name = "splitterItem1";
+            this.splitterItem1.Size = new System.Drawing.Size(10, 866);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1365, 886);
-            this.Controls.Add(this.splitContainerControl2);
+            this.Controls.Add(this.layoutControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.treeList1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
-            this.splitContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
-            this.splitContainerControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetNameBoxControl1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).EndInit();
-            this.splitContainerControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,14 +249,18 @@
 
         private DevExpress.XtraSpreadsheet.SpreadsheetControl spreadsheetControl1;
         private DevExpress.XtraTreeList.TreeList treeList1;
-        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
-        private System.Windows.Forms.Button button1;
-        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl2;
         private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn1;
-        private DevExpress.XtraEditors.SplitterControl splitterControl1;
-        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl3;
         private DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl spreadsheetNameBoxControl1;
         private DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl spreadsheetFormulaBarControl1;
+        private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraLayout.SplitterItem splitterItem1;
     }
 }
 

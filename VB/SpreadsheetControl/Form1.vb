@@ -6,10 +6,10 @@ Imports DevExpress.XtraTreeList
 Imports DevExpress.XtraTreeList.Nodes
 
 Namespace SpreadsheetControl_API
-	Partial Public Class Form1
-		Inherits Form
+    Partial Public Class Form1
+        Inherits DevExpress.XtraEditors.XtraForm
 
-		Private workbook As IWorkbook
+        Private workbook As IWorkbook
 
 		Public Sub New()
 			InitializeComponent()
@@ -104,7 +104,7 @@ Namespace SpreadsheetControl_API
 			treeList1.BestFitColumns()
 		End Sub
 
-		Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button1.Click
+		Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles SimpleButton1.Click
 			Dim node As TreeListNode = treeList1.FocusedNode
 			RunSelectedExample(node)
 		End Sub

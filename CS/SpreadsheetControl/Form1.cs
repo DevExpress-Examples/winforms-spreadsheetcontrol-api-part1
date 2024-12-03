@@ -72,6 +72,7 @@ namespace SpreadsheetControl_API
             examples[2].Groups.Add(new SpreadsheetExample("Create, Edit and Copy Comments", CellActions.AddCommentAction));
             examples[2].Groups.Add(new SpreadsheetExample("Copy Data Only, Style Only, or Data with Style", CellActions.CopyCellDataAndStyleAction));
             examples[2].Groups.Add(new SpreadsheetExample("Merge/Split Cells", CellActions.MergeAndSplitCellsAction));
+            examples[2].Groups.Add(new SpreadsheetExample("Place Image in a Cell", CellActions.PlaceImageInCellAction));
             examples[2].Groups.Add(new SpreadsheetExample("Clear Cells", CellActions.ClearCellsAction));
 
             // Add nodes to the "Formulas" group of examples. 
@@ -80,7 +81,8 @@ namespace SpreadsheetControl_API
             examples[3].Groups.Add(new SpreadsheetExample("Names in Formulas", FormulaActions.UseNamesInFormulasAction));
             examples[3].Groups.Add(new SpreadsheetExample("Create Named Formulas", FormulaActions.CreateNamedFormulasAction));
             examples[3].Groups.Add(new SpreadsheetExample("Functions in Formulas", FormulaActions.UseFunctionsInFormulasAction));
-            examples[3].Groups.Add(new SpreadsheetExample("Shared and Array Formulas", FormulaActions.CreateSharedAndArrayFormulasAction));
+            examples[3].Groups.Add(new SpreadsheetExample("Shared and Legacy Array Formulas", FormulaActions.CreateSharedAndArrayFormulasAction));
+            examples[3].Groups.Add(new SpreadsheetExample("Dynamic Array Formulas", FormulaActions.CreateDynamicArrayFormulasAction));
 
             // Add nodes to the "Formatting" group of examples.
             examples[4].Groups.Add(new SpreadsheetExample("Create, Modify and Apply a Style", FormattingActions.CreateModifyApplyStyleAction));

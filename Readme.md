@@ -42,7 +42,7 @@ The application form contains the list of supported operations. A user can selec
 * [WinForms SpreadsheetControl API - Part 2](https://github.com/DevExpress-Examples/winforms-spreadsheetcontrol-api-part-2-e4832)
 * [WinForms SpreadsheetControl API - Part 3](https://github.com/DevExpress-Examples/winforms-spreadsheetcontrol-api-part-3-t231273)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-spreadsheetcontrol-api-part1&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-spreadsheetcontrol-api-part1&~~~was_helpful=no)
 
